@@ -10,7 +10,6 @@ cryptography==2.8
 defusedxml==0.6.0
 distlib==0.3.0
 distro==1.4.0
-dj-database-url==0.5.0
 Django==2.2.7
 django-allauth==0.40.0
 django-crispy-forms==1.8.0
@@ -51,7 +50,6 @@ pyRFC3339==1.0
 pyrsistent==0.15.7
 python-dateutil==2.6.1
 python-debian==0.1.32
-python-decouple==3.3
 python3-openid==3.1.0
 pytz==2018.3
 pyxdg==0.25
