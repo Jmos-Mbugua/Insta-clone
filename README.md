@@ -2,7 +2,7 @@
 
 
 ## Description
-InstaClone is an instagram like application built with the aim of learning django. It allows users to post images, see other people's posts and comment. `https://gallery100.herokuapp.com/`
+InstaClone is an instagram like application built with the aim of learning django. It allows users to post images, see other people's posts and comment. `https://john002.herokuapp.com/`
 
 
 ## Author
@@ -37,7 +37,7 @@ Signup to the application | Click on `Signup` | A sign up page appears with a si
 * python3.6
 * virtual environment
 * pipenv
-* django 2.8.4
+* django 2.2.7
 
 ## admin credentials
 USERNAME: john
@@ -47,7 +47,7 @@ PASSWORD: 123456
 * In your terminal:
         
         $ git clone https://github.com/Jmos-Mbugua/Insta-clone
-        $ cd Mos-Gallery
+        $ cd Insta-Clone
 
 ## Running the Application
 * Install virtual environment using `$ python3.6 -m venv --without-pip virtual`
@@ -57,7 +57,7 @@ PASSWORD: 123456
 * Create a database and edit the database configurations in `settings.py` to your own credentials.
 * Make migrations
 
-        $ python manage.py makemigrations photos
+        $ python manage.py makemigrations instagram
         $ python3.6 manage.py migrate 
 
 * To run the application, in your terminal:
@@ -69,9 +69,11 @@ PASSWORD: 123456
 
         $ python3.6 manage.py test 
         
+## Known Bugs
+ * The post button from the webpage has a bug. The process of solving the bug is ongoing.
 ## Technologies Used
 * Python3.6
-* Django
+* Django 2.2.7
 * HTML
 * Bootstrap
 
