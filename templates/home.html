@@ -1,8 +1,38 @@
 {% extends '_base.html' %}
+{% load static %}
+
+
 {% block title %}
 <h1>Homepage</h1>
 {% endblock title %}
 
 {% block content %}
-<h1>Homepage</h1>
+    <div class="container">
+        <div class="row align-middle">  
+            
+            {% for post in object_list %}
+            <div class="col-md-7">
+                <div class="card m-2 ml-5">
+                    
+                    <span><h4 class="card-header pl-2" style="font-size: medium; color: black;">
+                        <span><img src="{{ post.user_profile.avatar.url }}" class="rounded-circle" style="width: 30px; height: 30px; margin-right: 10px;" alt="profile pic"></span>
+                         {{ post.profile.username }} </h4></span>
+                    
+                    <img src=" {{ post.image.url }} " class="img-fluid" class="card-img-top" alt=" {{ post.name }} ">
+                    <div class="card-body">
+                      <span><i class="fa fa-heart-o pl-2" style="font-size:24px"></i></span>
+                      <span><i class="fa fa-comment-o pl-2" style="font-size:28px"></i></span>
+                      <span><i class="fa fa-paper-plane-o pl-2" style="font-size:26px"></i></span>
+                      <p style="font-weight: bold;"> {{post.likes}} likes</p>
+                      <p class="card-text"> <span style="font-weight: bold;"> {{ post.profile.username }} </span> Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"> {{ post.post_date }} </small>
+                      </div>
+                  </div>            
+            </div>
+            {% endfor %}
+            <div class="col-md-6"></div>
+        </div>
+    </div>
 {% endblock content %}
