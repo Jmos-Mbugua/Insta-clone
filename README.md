@@ -39,6 +39,10 @@ Signup to the application | Click on `Signup` | A sign up page appears with a si
 * pipenv
 * django 2.8.4
 
+## admin credentials
+USERNAME: john
+PASSWORD: 123456
+
 ### Cloning
 * In your terminal:
         
